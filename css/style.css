@@ -50,6 +50,8 @@ aside {
   grid-area: aside;
   background-image: url(../images/forest1.jpg);
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,21 +67,27 @@ main {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "section1 section2";
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .section1 {
-  width: 100%;
+  grid-area: section1;
   background-image: url(../images/tree.jpg);
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section2 {
-  width: 100%;
+  grid-area: section2;
   height: 100vh;
   background-image: url(../images/forest-hut2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
